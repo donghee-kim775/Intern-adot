@@ -24,7 +24,7 @@ def file_upload():
         return data
 
 @app.route("/model", methods=['POST'])
-def model(data):
+def model():
     if request.method == 'POST':
         # 최고가와 최저가의 중간가격으로 예측하기 위한 설정
         high_prices = data['High'].values
